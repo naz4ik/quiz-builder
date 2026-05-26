@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  background-color: #f3f3f3;
+  height: 50px;
+  align-items: center;
+  padding-left: 30px;
+  justify-content: flex-start;
+}
+
+.text {
+  text-decoration: none;
+  color: black;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.text:hover {
+    color: grey;
+  }

@@ -1,0 +1,133 @@
+.container {
+  border-radius: 15px;
+  min-height: 400px;
+  padding: 50px;
+  background-color: #f3f3f3;
+  margin: 100px auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid rgb(98, 95, 255);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.inputError {
+  border: 2px solid #ff4d4f !important;
+  background-color: #fff2f2 !important;
+}
+
+.questionName {
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid rgb(164, 222, 255);
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.selectType {
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid rgb(164, 222, 255);
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.radioInput {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgb(3, 76, 119);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  margin-right: 6px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgb(3, 76, 119);
+    transition: transform 0.2s ease;
+  }
+
+  &:checked {
+    &::after {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+}
+
+.booleantext {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.addQuestion,
+.createQuiz {
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid rgb(164, 222, 255);
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checkboxInput {
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid rgb(3, 76, 119);
+  padding: 3px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 120px;
+}
+
+.addMore {
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid rgb(3, 76, 119);
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.inputType {
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid rgb(3, 76, 119);
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.inputType {
+  cursor: pointer;
+}
+
+.removeQuestion {
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 90px;
+  border: 1px solid rgb(164, 222, 255);
+}
